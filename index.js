@@ -3,12 +3,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import express from 'express';
-import { connectDB } from './src/db.js';
-import authRoutes from './src/routes/auth/index.js';
-import assessmentAdminRoutes from './src/routes/assesment/admin/index.js';
-import assessmentUserRoutes from './src/routes/assesment/index.js';
+import { connectDB } from './db.js';
+import authRoutes from './routes/auth/index.js';
+import assessmentAdminRoutes from './routes/assesment/admin/index.js';
+import assessmentUserRoutes from './routes/assesment/index.js';
 
-import authMiddleware from './src/middlewares/auth.js';
+import authMiddleware from './middlewares/auth.js';
 
 connectDB();
 
